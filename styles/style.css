@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+   /* background-color: #999; */
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    border: 3px solid #2a2616;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center; /* use this when using grid. It centers items inside their column */
+    background-color: grey;
+
+}
+ 
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 2em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+section#blue {
+    background-color: lightblue
+}
+section#green {
+    background-color: lightgreen;
+
+}
+section#red {
+    background-color: lightcoral;
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+}
+section#about {
+    grid-column: 1/4;
+}
