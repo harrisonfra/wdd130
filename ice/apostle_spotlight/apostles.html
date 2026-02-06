@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+        body {
+            background-color: #e8eced;
+            display: flex;
+        }
+
+        #card {
+            font-family: Arial, sans-serif;
+            background-image: url(images/christus.webp);
+            background-position: 50% 30%;
+            border: 10px solid black;
+            border-radius: 20px;
+            min-width: 1200px;
+            text-align: center; 
+        }
+
+        #first-presidency-title {
+
+            color: white;
+            grid-column: 1 / -1;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #first-presidency {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            place-items: center;
+            gap: 20px;
+
+        }
+        #first-presidency img {
+            border-radius: 50%;
+            border: 10px solid white;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        #first-presidency img:hover{
+            border: 10px solid black;
+        }
+
+        #quorum-of-twelve {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* justify-content: center;
+            align-content: center; */
+            place-items: center;
+        }
+
+        #quorum-of-twelve img {
+            
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            object-fit: cover;
+            border: 10px solid white;
+        }
+        #quorum-of-twelve img:hover{
+            border: 10px solid black;
+        }
+
+        #quorum-of-twelve h2 {
+            grid-column: 1 / -1;
+            font-size: 2em;
+            color: white;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="card">
+        <div id="first-presidency">
+            <h1 id="first-presidency-title">First Presidency</h1>
+            <img src="images/eyring.webp" alt="Eyring">
+            <img src="images/oaks.webp" alt="Oaks">
+            <img src="images/christofferson.webp" alt="Christofferson">
+        </div>
+        <div id="quorum-of-twelve">
+            <h2>Quorum of the Twelve Apostles</h2>
+            <img src="images/holland.webp" alt="Holland">
+            <img src="images/uchtdorf.webp" alt="Uchtdorf">
+            <img src="images/bednar.webp" alt="Bednar">
+            <img src="images/cook.webp" alt="Cook">
+            <img src="images/anderson.webp" alt="Anderson">
+            <img src="images/rasband.webp" alt="Rasband">
+            <img src="images/stevenson.webp" alt="Stevenson">
+            <img src="images/renlund.webp" alt="Renlund">
+            <img src="images/gong.webp" alt="Gong">
+            <img src="images/soares.webp" alt="Soares">
+            <img src="images/kearon.webp" alt="Kearon">
+            <img src="images/causse.webp" alt="Causse">
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
+
+<!-- shift alt down to duplicate the line and move it down. -->
