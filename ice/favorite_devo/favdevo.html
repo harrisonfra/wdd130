@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <style> 
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    th, td, tr {
+      border: 1px solid black;
+    }
+    table {
+  width: 100%;
+  border-collapse: collapse; 
+  margin: 20px 0;
+  font-family: "Georgia Pro";
+}
+    td{
+      padding: 1em;
+    }
+    
+    label, input {
+      display: block;
+    }
+    form {
+      margin-top: 1em;
+    }
+    input{
+      margin-bottom: 0.5em;
+      padding: .5em;
+    }
+label {
+  text-align: left; 
+  display: block; 
+  margin-bottom: 5px; 
+}
+
+input[type="text"] {
+  width: 100%; 
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+  </style>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content-box">
+        <!-- Add your devotional content here -->
+         <table>
+          <tr>
+            <th>Speaker</th>
+            <th>Title</th>
+            <th>Location</th>
+            <th>Year</th>
+          </tr>
+          <tr>
+            <td>Elder Patrick Kearon</td>
+            <td>Flecks of Gold</td>
+            <td>Brigham Young University</td>
+            <td>2024</td>
+          </tr>
+          <tr>
+            <td>Steven E Snow</td>
+            <td>Stepping-Stones and Stumbling Blocks</td>
+            <td>Brigham Young University</td>
+            <td>2012</td>
+          </tr>
+          <tr>
+            <td>Jeffery R Holland</td>
+            <td>Remember Lot's Wife</td>
+            <td>Brigham Young University</td>
+            <td>2009</td>
+          </tr>
+          <tr>
+            <td>David A Bednar</td>
+            <td>Is it the Spirit or is it me?</td>
+            <td>MTC Devotional</td>
+            <td>2009</td>
+          </tr>
+         </table>
+         <div id="input">
+          <h4>Add your Favorite Devotional!</h4>
+         <form action="">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name">
+          <label for="title">Title:</label>
+          <input type="text" name="title" id="title">
+          <label for="location">Location:</label>
+          <input type="text" name="location" id="location">
+          <label for="year">Year:</label>
+          <input type="text" name="year" id="year">
+          <input type="Submit" value="Submit">
+          
+         </form>
+         </div>
+         
+      </div>
+    </main>
+  </div>
+</body>
+</html>
