@@ -50,5 +50,14 @@ section{
     margin: 0 auto;
     
 }
+img{ 
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
+}
+body{ 
+    overflow-x: hidden;
+}
 
 
