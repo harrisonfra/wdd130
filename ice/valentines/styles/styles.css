@@ -1,8 +1,28 @@
-/* Add your CSS here to style your valentines day page */
 .mea-culpa-regular {
-  font-family: "Mea Culpa", cursive;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Mea Culpa", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+li {
+
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper {
+    max-width: 1100px;
+    margin: 0 auto;  
 }
 
 
@@ -10,8 +30,16 @@ body {
     background-color: pink;
     font-family: 'Arial', sans-serif;
     text-align: center;
-    justify-items: center;
     padding: 20px;
+    overflow-x: hidden;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 40px;
+    align-items: start;
+    
 }
 
 h1 {
@@ -19,45 +47,66 @@ h1 {
     font-size: 3em;
     margin-bottom: 20px;
     font-family: "Mea Culpa", cursive;
+    grid-column: 1 / -1;
 }
+
 p {
     color: white;
     font-size: 1.5em;
     margin-bottom: 20px;
 }
-.valentine-card {
+
+section {
     background-color: white;
     border: 2px solid red;
     border-radius: 10px;
     padding: 20px;
-    margin: 20px auto;
-    width: 300px;
+    max-width: 500px;
+    margin: 0;
+
 }
-.valentine-card h2 {
+
+.card h2 {
     color: red;
     font-size: 2em;
     margin-bottom: 10px;
 }
-.valentine-card p {
+
+.card p {
     color: black;
     font-size: 1.2em;
 }
-section{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 500px;
-    margin: 0 auto;
-    
-}
-img{ 
+
+img {
     width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+.card {
+    display: block;
+}
+
+img {
+    grid-column: 1;
+    grid-row: 2 / span 3;
+    max-width: 700px;
+    width: 100%;
     
 }
-body{ 
-    overflow-x: hidden;
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr; /* single column */
+    }
+
+    img {
+        grid-column: auto;
+        grid-row: auto;
+        max-width: 100%;
+    }
+
+    h1 {
+        grid-column: auto;
+    }
 }
-
-
