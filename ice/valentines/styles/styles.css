@@ -1,0 +1,54 @@
+/* Add your CSS here to style your valentines day page */
+.mea-culpa-regular {
+  font-family: "Mea Culpa", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+    background-color: pink;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    justify-items: center;
+    padding: 20px;
+}
+
+h1 {
+    color: red;
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-family: "Mea Culpa", cursive;
+}
+p {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.valentine-card {
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+}
+.valentine-card h2 {
+    color: red;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.valentine-card p {
+    color: black;
+    font-size: 1.2em;
+}
+section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 0 auto;
+    
+}
+
+
