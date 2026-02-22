@@ -4,79 +4,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/style.css">
   <title>Harrison Fraser | WDD130 | Home</title>
 </head>
 
 <body>
   <header>
     <nav>
-      <a href="wwr/index.html">White Water Rafting Website</a>
-      <a href="wwr/site-plan-rafting.html">White Water Rafting Siteplan</a>
-      <a href="ice/index.html">ICE</a>
-      <a href="aboutme.html">About Me</a>
       <a href="index.html">Home</a>
+      <a href="aboutme.html">About Me</a>
+      <a href="wwr/index.html">White Water Rafting</a>
+      <a href="wwr/site-plan-rafting.html">Site Plan</a>
+      <a href="ice/index.html">ICE</a>
     </nav>
   </header>
   <main>
-    <ul>
-      <li>lorem</li>
-      <li>lorem</li>
-      <li>lorem</li>
-      <li>lorem</li>
-    </ul>
-    <h1>This table will display projects</h1>
-    <table>
-      <tr>
-        <th><h1>Header 1</h1></th>
-        <th><h2>Header 2</h2></th>
-        <th><h3>Header 3</h3></th>
-      </tr>
-    </table>
-    <section id="blue">
-      <h4>Cool Content</h4>
-      <img src="http://picsum.photos/500" alt="sample image">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dicta officiis hic quo reiciendis illo distinctio
-        excepturi odio doloribus! Corrupti accusantium quisquam molestias natus assumenda fugit quam officia illo esse.
-      </p>
-    </section>
-    <section id="red">
-      <h5>Cool Content</h5>
-      <img src="http://picsum.photos/500" alt="sample image">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dicta officiis hic quo reiciendis illo distinctio
-        excepturi odio doloribus! Corrupti accusantium quisquam molestias natus assumenda fugit quam officia illo esse.
-      </p>
-    </section>
-    <section id="green">
-      <h6>Cool Content</h6>
-      <img src="http://picsum.photos/500" alt="sample image">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dicta officiis hic quo reiciendis illo distinctio
-        excepturi odio doloribus! Corrupti accusantium quisquam molestias natus assumenda fugit quam officia illo esse.
-      </p>
+
+    <section id="top">
+      <div class="top-content">
+        <h1>Harrison Fraser</h1>
+        <p>Computer Science Student • Aspiring Web Developer</p>
+        <img src="images/me.jpg" alt="Photo of me" width="500">
+      </div>
+
+
     </section>
 
 
     <section id="about">
-      <p>My name is Harrison and I am a computer science student at BYU Idaho. I love programming and working on cars. I
+      <h2>About Me</h2>
+      <p>I am a computer science student at BYU Idaho. I love programming and working on cars. I
         love web design and I am excited to learn how to apply it in a world that is increasingly dependent on
         technology!</p>
-      <p>I have been a member of the church for my whole life. I served in the Utah, Salt Lake City mission and learned
-        to speak Swahili there. My favorite scripture is Doctrine and Covenants 133:37 "And this gospel shall be
-        preached unto every nation, and kindred, and tongue, and people."</p>
-      <h1>Harrison Fraser</h1>
-      <a href="https://lds.org">lorem</a>
-      <img src="images/me.jpg" alt="Photo of me" width="500">
+      <h1>Here are some of the projects I have made!</h1>
+    </section>
+    <section id="blue">
+      <h4>Python Email Print Server</h4>
+      <img src="images/cups.png" alt="sample image">
+      <p>This is a print server running on a raspberry pi that listens for emails and prints them out. It is written in
+        python and uses the imaplib library to connect to the email server and the cups library to print the emails. It
+        is a fun project that I made solve a real life problem! Link coming soon!</p>
+    </section>
+    <section id="red">
+      <h4>White Water Rafting</h4>
+      <a href="wwr/index.html">
+      <img src="images/WWR.png" alt="sample image">
+      </a>
+      <p>This is a white water rafting website that I made for a class project. It is a simple website that we made for
+        a theoretical White Water Rafting company. We also designed a logo for this website.
+      </p>
+      
+    </section>
+    <section id="green">
+      <h4>eBay Seller Tool</h4>
+      <a href="https://harrisonfra.github.io">
+      <img src="images/ebay.png" alt="sample image">
+      </a>
+      <p>This is a basic website I built to help me do product research for my eBay storefront. It has a few search functions to see listing prices and sales data for products I am selling. 
+      </p>
+    </section>
+
+
   </main>
-  </section>
   <form action="submit-email.php" method="POST">
     <label for="email">Email Address:</label>
     <input type="email" id="email" name="email" required>
     <button type="submit">Contact Me</button>
-</form>
+  </form>
+
+
   <footer>
     &copy; 2025 Harrison Fraser
   </footer>
-
 </body>
 
 </html>
